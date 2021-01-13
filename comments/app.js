@@ -1,17 +1,33 @@
 let ProfilePic = () => {
-    return <span>Make this component render an image</span>
-}
+  return (
+    <img
+      src="https://avatars.dicebear.com/v2/female/7f9a28abe6371d82dff8e70d79c1d109.svg"
+      style={{ width: "50px" }}
+    ></img>
+  );
+};
 
 let CommentBody = () => {
-    return <span>Make this component render a username in bold above the comment text</span>
-}
+  return <b>Crystal</b>;
+};
 
 let Comment = () => {
-    return <span>Make each comment render a profile picture and the comment body</span>
-}
+  return (
+    <div>
+      <ProfilePic />
+      <CommentBody />
+    </div>
+  );
+};
 
 let Comments = () => {
-    return <span>Make this component render a list of comments</span>
-}
+  return (
+    <div>
+      <Comment />
+      <Comment />
+      <Comment />
+    </div>
+  );
+};
 
-ReactDOM.render(<Comments />, document.getElementById('root'))
+ReactDOM.render(<Comments />, document.getElementById("root"));

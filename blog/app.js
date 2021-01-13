@@ -1,16 +1,31 @@
 let Header = () => {
-    return <span>Design a header for your blog</span>
-}
+  return <h1>Crystal's Blog</h1>;
+};
 let Article = () => {
-    return <span>Write and design your blog article</span>
-}
+  return (
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+  );
+};
 let Footer = () => {
-    return <span>Design a footer for your blog</span>
-}
+  return <footer>Copyright 2021 Crystal</footer>;
+};
 
 let Blog = () => {
-    return <span>Make this Component render the header, article, and footer</span>
-}
+  return (
+    <div>
+      <Header />
+      <Article />
+      <Footer />
+    </div>
+  );
+};
 
-
-ReactDOM.render(<Blog />, document.getElementById('root'))
+ReactDOM.render(<Blog />, document.getElementById("root"));
